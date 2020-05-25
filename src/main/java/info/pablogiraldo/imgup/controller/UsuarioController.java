@@ -50,9 +50,9 @@ public class UsuarioController {
 			RedirectAttributes flash) {
 
 		if (!foto.isEmpty()) {
-			String ruta = "C://pruebas//img";
+//			String ruta = "C://pruebas//img";
 
-//			String ruta = "file:img/";
+			String ruta = "file:/static/img/";
 
 //			String ruta = "\\META-INF.resources\\img\\";
 
