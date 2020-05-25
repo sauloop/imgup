@@ -38,6 +38,9 @@ public class UsuarioController {
 	@Autowired
 	private IUsuarioDAO usuarioDao;
 
+	@Autowired
+	ServletContext context;
+
 	@GetMapping("/formusuario")
 	public String formUsuario(Model model) {
 
@@ -52,12 +55,12 @@ public class UsuarioController {
 		if (!foto.isEmpty()) {
 //			String ruta = "C://pruebas//img";
 
-			String ruta = "src/main/resources/static/img/";
+//			String ruta = "src/main/resources/static/img/";
+
+			String relativeWebPath = "/img/";
+			String ruta = context.getRealPath(relativeWebPath);
 
 //			String ruta = "\\META-INF.resources\\img\\";
-
-//			String relativeWebPath = "/static/img";
-//			String ruta = context.getRealPath(relativeWebPath);
 
 			String nombreUnico = UUID.randomUUID().toString() + "-" + foto.getOriginalFilename();
 
