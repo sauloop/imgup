@@ -52,7 +52,7 @@ public class UsuarioController {
 		if (!foto.isEmpty()) {
 //			String ruta = "C://pruebas//img";
 
-			String ruta = "src/main/resources/";
+			String ruta = "src/main/resources/static/img/";
 
 //			String ruta = "\\META-INF.resources\\img\\";
 
