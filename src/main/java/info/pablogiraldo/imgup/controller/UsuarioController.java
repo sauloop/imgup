@@ -57,7 +57,7 @@ public class UsuarioController {
 
 //			String ruta = "file:/opt/files/";
 
-			String relativeWebPath = "/";
+			String relativeWebPath = "/img/";
 			String ruta = context.getRealPath(relativeWebPath);
 
 //			String ruta = "\\META-INF.resources\\img\\";
@@ -66,7 +66,8 @@ public class UsuarioController {
 
 			try {
 				byte[] bytes = foto.getBytes();
-				Path rutaAbsoluta = Paths.get(ruta + "//" + nombreUnico);
+//				Path rutaAbsoluta = Paths.get(ruta + "//" + nombreUnico);
+				Path rutaAbsoluta = Paths.get(ruta + "/" + nombreUnico);
 				Files.write(rutaAbsoluta, bytes);
 				usuario.setFoto(nombreUnico);
 			} catch (Exception e) {
