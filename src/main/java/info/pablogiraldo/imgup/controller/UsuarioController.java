@@ -67,7 +67,7 @@ public class UsuarioController {
 			try {
 				byte[] bytes = foto.getBytes();
 //				Path rutaAbsoluta = Paths.get(ruta + "//" + nombreUnico);
-				Path rutaAbsoluta = Paths.get(ruta + "/" + nombreUnico);
+				Path rutaAbsoluta = Paths.get(ruta + "//" + nombreUnico);
 				Files.write(rutaAbsoluta, bytes);
 				usuario.setFoto(nombreUnico);
 			} catch (Exception e) {
