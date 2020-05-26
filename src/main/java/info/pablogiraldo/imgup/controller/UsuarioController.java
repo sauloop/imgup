@@ -57,7 +57,7 @@ public class UsuarioController {
 
 //			String ruta = "file:/opt/files/";
 
-			String relativeWebPath = "/files/";
+			String relativeWebPath = "/";
 			String ruta = context.getRealPath(relativeWebPath);
 
 //			String ruta = "\\META-INF.resources\\img\\";
