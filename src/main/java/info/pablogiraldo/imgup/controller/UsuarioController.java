@@ -55,10 +55,10 @@ public class UsuarioController {
 		if (!foto.isEmpty()) {
 //			String ruta = "C://pruebas//img";
 
-//			String ruta = "src/main/resources/static/img/";
+			String ruta = "file:/opt/files/";
 
-			String relativeWebPath = "/img/";
-			String ruta = context.getRealPath(relativeWebPath);
+//			String relativeWebPath = "files/";
+//			String ruta = context.getRealPath(relativeWebPath);
 
 //			String ruta = "\\META-INF.resources\\img\\";
 
