@@ -19,8 +19,9 @@
 				<div class="card m-1 p-1" style="width: 30%">
 					<div class="row">
 						<div class="col-md-7">
-							<img class="float-left ml-1" th:src="@{'/avatar.png'}"
-								th:alt="avatar" style="max-width: 90%; max-height: 100%;" />
+							<img class="float-left ml-1" th:src="@{'/img/'+${usuario.foto}}"
+								th:alt="${usuario.foto}"
+								style="max-width: 90%; max-height: 100%;" />
 						</div>
 
 						<div class="col-md-5 mt-3">
