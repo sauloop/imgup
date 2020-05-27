@@ -32,9 +32,6 @@ public class UsuarioController {
 //	@Value("${upload.path}")
 //	private String ruta;
 
-//	@Autowired
-//	ServletContext context;
-
 	@Autowired
 	private IUsuarioDAO usuarioDao;
 
